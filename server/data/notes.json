@@ -1,0 +1,21 @@
+[
+    {
+        "id":"001",
+        "name":"Kayla",
+        "messages":[
+            {
+                "id":"5678",
+                "signed":"anon",
+                "color":"000000",
+                "message":"Cool whiteboard"
+            },
+            {
+                "id":"5679",
+                "signed":"anon",
+                "color":"000000",
+                "message":"Cool whiteboard 2"
+            }
+        ]
+        
+    }
+]
