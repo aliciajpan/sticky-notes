@@ -1,92 +1,111 @@
 [
-	{
-		"id": "001",
-		"name": "Kayla",
-		"messages": [
-			{
-				"id": "5678",
-				"signed": "anon",
-				"color": "000000",
-				"message": "Cool whiteboard"
-			},
-			{
-				"id": "18946c64-9073-4fb6-b2ff-52aa04d67a22",
-				"signed": "anon",
-				"color": "000000",
-				"message": "Has a cool whiteboard"
-			}
-		]
-	},
-	{
-		"id": "002",
-		"name": "Jajuan",
-		"messages": [
-			{
-				"id": "3eca2014-ec6e-4134-98a3-b2e9d46cf4aa",
-				"signed": "anon",
-				"color": "000000",
-				"message": "Knows that git status is FREEEE"
-			}
-		]
-	},
-	{
-		"id": "003",
-		"name": "Jon",
-		"messages": [
-			{
-				"id": "f996a735-e444-400d-aa6f-b0bc69f22369",
-				"signed": "anon",
-				"color": "000000",
-				"message": "Easily gets around the docs, even when they're 'POOPY'"
-			}
-		]
-	},
-	{
-		"id": "004",
-		"name": "Sammy",
-		"messages": [
-			{
-				"id": "0df59f58-ae8e-4954-a11c-3e8e90c51e1d",
-				"signed": "anon",
-				"color": "000000",
-				"message": "Gives the best VS code shortcuts"
-			}
-		]
-	},
-	{
-		"id": "005",
-		"name": "Henry",
-		"messages": [
-			{
-				"id": "17c06740-056d-4d6f-b3dc-4429ce065dfa",
-				"signed": "anon",
-				"color": "000000",
-				"message": "Always has a cool way to solve the morning challenge"
-			}
-		]
-	},
-	{
-		"id": "006",
-		"name": "Fateme",
-		"messages": [
-			{
-				"id": "571a5730-4b89-408f-86b6-c1dd8b2092c2",
-				"signed": "anon",
-				"color": "000000",
-				"message": "Is the learning studio QUEEN"
-			}
-		]
-	},
-	{
-		"id": "007",
-		"name": "Krystyna",
-		"messages": [
-			{
-				"id": "8e70ca75-eab9-4d3b-920c-f14ac08de3ee",
-				"signed": "anon",
-				"color": "000000",
-				"message": "Is always dressed to impress with her impeccable sytle"
-			}
-		]
-	}
+  {
+    "id": "001",
+    "name": "Kayla",
+    "color": "namebutton__pink",
+    "messages": [
+      {
+        "id": "5678",
+        "signed": "Anon",
+        "color": "stickycard__pink",
+        "message": "Cool whiteboard!"
+      }
+    ]
+  },
+  {
+    "id": "002",
+    "name": "Jajuan",
+    "color": "namebutton__purple",
+    "messages": [
+      {
+        "id": "3eca2014-ec6e-4134-98a3-b2e9d46cf4aa",
+        "signed": "Anon",
+        "color": "stickycard__green",
+        "message": "Knows that git status is FREEEE"
+      }
+    ]
+  },
+  {
+    "id": "003",
+    "name": "Jon",
+    "color": "namebutton__green",
+    "messages": [
+      {
+        "id": "f996a735-e444-400d-aa6f-b0bc69f22369",
+        "signed": "Anon",
+        "color": "stickycard__teal",
+        "message": "Easily gets around the docs, even when they're 'POOPY'"
+      },
+      {
+        "id": "ef732d36-73e9-4cb1-b550-4f816fed079d",
+        "signed": "Anon",
+        "color": "stickycard__green",
+        "message": "Wilderness explorer!"
+      }
+    ]
+  },
+  {
+    "id": "004",
+    "name": "Sammy",
+    "color": "namebutton__teal",
+    "messages": [
+      {
+        "id": "0df59f58-ae8e-4954-a11c-3e8e90c51e1d",
+        "signed": "Anon",
+        "color": "stickycard__pink",
+        "message": "Gives the best VS code shortcuts"
+      },
+      {
+        "id": "864209f4-a7b3-4e15-8ec2-a6eb6278d417",
+        "signed": "",
+        "color": "stickycard__green",
+        "message": "Very engaging lectures!"
+      }
+    ]
+  },
+  {
+    "id": "005",
+    "name": "Henry",
+    "color": "namebutton__pink",
+    "messages": [
+      {
+        "id": "17c06740-056d-4d6f-b3dc-4429ce065dfa",
+        "signed": "Anon",
+        "color": "stickycard__purple",
+        "message": "Always has a cool way to solve the morning challenge"
+      },
+      {
+        "id": "7507f2a9-be73-434e-b3c8-dbe0cf503cd4",
+        "signed": "Everyone",
+        "color": "stickycard__pink",
+        "message": "Is GOATed out of his mind"
+      }
+    ]
+  },
+  {
+    "id": "006",
+    "name": "Fateme",
+    "color": "namebutton__purple",
+    "messages": [
+      {
+        "id": "571a5730-4b89-408f-86b6-c1dd8b2092c2",
+        "signed": "Anon",
+        "color": "stickycard__green",
+        "message": "Is the learning studio QUEEN!!"
+      }
+    ]
+  },
+  {
+    "id": "007",
+    "name": "Krystyna",
+    "color": "namebutton__green",
+    "messages": [
+      {
+        "id": "8e70ca75-eab9-4d3b-920c-f14ac08de3ee",
+        "signed": "Anon",
+        "color": "stickycard__teal",
+        "message": "Is always dressed to impress with her impeccable style"
+      }
+    ]
+  }
 ]

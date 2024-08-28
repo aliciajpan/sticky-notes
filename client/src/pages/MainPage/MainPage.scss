@@ -3,7 +3,6 @@
 
 .main {
     display: flex;
-    flex-wrap: wrap;
     background-color: $extra-light;
 
     &__top {
@@ -26,7 +25,14 @@
         padding: 1rem;
         width: 100%;
     }
-    // &__stickys {
-    //     display: flex;
-    // }
+
+    &__stickys {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__alt {
+        display: flex;
+        flex-direction: row;
+    }
 }

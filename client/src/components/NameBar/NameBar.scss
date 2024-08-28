@@ -11,6 +11,11 @@
     height: 100vh;
     background-color: $light;
     padding: 1rem;
+    justify-content: space-between;
+
+    &__content {
+        width: 100%;
+    }
 
     &__logo {
         @include size(80px, 80px);

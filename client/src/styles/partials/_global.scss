@@ -72,3 +72,12 @@ select, input, textarea {
     }
 }
 
+a { 
+    display: flex;
+    justify-content: center;
+    text-decoration: none; 
+    color: inherit;
+    width: 100%;
+    cursor: pointer;
+} 
+

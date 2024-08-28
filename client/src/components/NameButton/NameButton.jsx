@@ -1,10 +1,13 @@
+import { NavLink } from "react-router-dom";
 import "./NameButton.scss";
 
-function NameButton({name, colour}) {
+function NameButton({person, colour}) {
     return (
-        <button className={`namebutton ${colour}`}>
-            <p className="namebutton__text">{name}</p>
-        </button>
+        <NavLink to={`/person/${person.id}`}>
+            <button className={`namebutton ${colour}`}>
+                <p className="namebutton__text">{person.name}</p>
+            </button>
+        </NavLink>
     );
 }
 

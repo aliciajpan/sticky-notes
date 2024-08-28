@@ -1,15 +1,16 @@
 import "./StickyCard.scss";
 
-function StickyCard({colour}) { // props: {sticky, colour}
+function StickyCard({msg}) {
+    const {signed, color, message} = msg;
     return (
-        <article className={`stickycard ${colour}`}>
+        <article className={`stickycard ${color}`}>
             <p className="stickycard__msg">
-                message message message message message message message message message message message message
+                {message}
             </p>
             <br></br>
             <div className="stickycard__author">
                 <p>signed,</p>
-                <p>NAME</p>
+                <p>{signed}</p>
             </div> 
         </article>
     );

@@ -1,43 +1,51 @@
 import { useState } from "react";
+import axios from "axios";
 import { NavLink } from "react-router-dom";
 import "./StickyForm.scss";
 
-function StickyForm() {
-    // const [titleState, setTitleState] = useState("");
-    // const [descriptionState, setDescriptionState] = useState("");
+function StickyForm({fetchMainPerson}) {
 
-    // const handleSubmit = (event) => {
-    //     event.preventDefault();
+    const nameToIDs = {
+        "Kayla": "001",
+        "Jajuan": "002",
+        "Jon": "003",
+        "Sammy": "004",
+        "Henry": "005",
+        "Fateme": "006",
+        "Krystyna": "007",
+    }
 
-    //     if (event.target.title.value === "" || event.target.description.value === "") {
-    //         setTitleState("");
-    //         setDescriptionState("");
-        
-    //         if (event.target.title.value === "") {
-    //             setTitleState("comment-form__invalid");
-    //         }
+    async function handleSubmit(event) {
+        event.preventDefault();
 
-    //         if (event.target.description.value === "") {
-    //             setDescriptionState("comment-form__invalid");
-    //         }
-    //     }
+        const stickyToPost = {
+            name: event.target.person.value,
+            signed: event.target.signed.value,
+            color: event.target.colour.value,
+            message: event.target.comment.value
+        }
 
-    //     else {
-    //         setTitleState("");
-    //         setDescriptionState("");
-    //         alert("Upload successful!")
-    //         event.target.reset();
-    //         window.location.href = "/";
-    //     }      
-    // }
+
+        try {
+            await axios.post("http://localhost:8080/form", stickyToPost);
+            fetchMainVideo();
+        }
+            
+        catch(error) {
+            console.error(error);
+        }
+
+        event.target.reset();
+        console.log(nameToIDs[stickyToPost.name]);
+        window.location.href=`/person/${nameToIDs[stickyToPost.name]}`;   
+    }
 
     return (
         <>
             <section className="stickyform">          
                 <h1>Add a sticky!</h1>
 
-                <form> 
-                    {/* onSubmit={handleSubmit} */}
+                <form onSubmit={handleSubmit}>
                     <div className="stickyform__field">
                         <label htmlFor="person">Who is it for?</label>
                         <select id="person" name="person" size="1">
@@ -71,7 +79,10 @@ function StickyForm() {
                         </div>
 
                         <button className="stickyform__button">Stick it!</button>
-                        <a className="stickyform__cancel">Cancel</a>
+                        
+                        <NavLink to="/">
+                            <a className="stickyform__cancel">Cancel</a>
+                        </NavLink>
                     </div>
                     
                 </form>
