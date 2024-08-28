@@ -26,7 +26,6 @@ function getPersonMessages(name, newMessage){
     const notesFile = fs.readFileSync("./data/notes.json");
     const people = JSON.parse(notesFile);
     const individualPerson = people.find((person)=> person.name === name);
-    console.log(individualPerson);
     const personMessages = individualPerson.messages;
     personMessages.push(newMessage);
     individualPerson.messages = personMessages;
