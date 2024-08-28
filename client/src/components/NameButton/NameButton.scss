@@ -1,0 +1,31 @@
+@use '../../styles/partials/global' as *;
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/_screen-sizes.scss' as *;
+
+.namebutton {
+    padding: 1rem;
+    width: 80%;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+
+    &__text {
+        font-size: 30px;
+    }
+
+    &__pink {
+        background-color: $pink;
+    }
+
+    &__teal {
+        background-color: $teal;
+    }
+
+    &__purple {
+        background-color: $purple;
+    }
+
+    &__green {
+        background-color: $green;
+    }
+}

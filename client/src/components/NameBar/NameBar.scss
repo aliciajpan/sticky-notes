@@ -1,0 +1,19 @@
+@use '../../styles/partials/global' as *;
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/_screen-sizes.scss' as *;
+
+.namebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    height: 100vh;
+    background-color: $light;
+    padding: 1rem;
+
+    &__logo {
+        @include size(80px, 80px);
+        margin-bottom: 1rem;
+    }
+}

@@ -1,0 +1,46 @@
+@use '../../styles/partials/_mixins.scss' as *;
+@use '../../styles/partials/_variables.scss' as *;
+
+.stickyform {
+    display: flex;
+    flex-direction: column;
+
+    &__field {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+    }
+
+    &__textarea {
+        height: 40vh;
+    }
+
+    &__right {
+        margin-left: auto;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__colours {
+        width: 95%;
+        margin: 1rem 0;
+        margin-left: auto;
+    }
+
+    &__button {
+        margin-left: auto;
+        @include paragraph;
+        width: 50%;
+        padding: 0.5rem;
+        background-color: $light;
+        border: 0.5px solid $dark;
+        border-radius: 10px;
+    }
+
+    &__cancel {
+        margin: 1rem 0;
+        margin-left: auto;
+        color: lightgrey;
+    }
+}
