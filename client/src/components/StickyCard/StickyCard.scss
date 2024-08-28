@@ -1,0 +1,41 @@
+@use '../../styles/partials/global' as *;
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/_screen-sizes.scss' as *;
+
+.stickycard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 12rem;
+    height: max-content;
+    border-radius: 10px;
+    padding: 0.75rem;
+    margin: 1rem;
+
+    &__msg {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__author {
+        align-self: flex-end;
+    }
+
+    &__pink {
+        background-color: $pink;
+    }
+
+    &__teal {
+        background-color: $teal;
+    }
+
+    &__purple {
+        background-color: $purple;
+    }
+
+    &__green {
+        background-color: $green;
+    }
+}

@@ -1,0 +1,74 @@
+@use './variables' as *;
+@use './fonts' as *;
+@use './mixins' as *;
+@use './screen-sizes' as *;
+
+// reset
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Avenir', Arial;
+    color: $dark;
+
+    h1 { // page header
+        font-size: 1.5rem;
+        line-height: 2rem;
+        font-family: 'Avenir';
+        font-weight: $bold;
+
+        @include tablet-desktop {
+            font-size: 2.0625rem;
+            line-height: 2.75rem;
+        }
+    }
+
+    h2 { // section header
+        font-size: 0.75rem;
+        line-height: 1.25rem;
+        font-family: 'Avenir';
+        font-weight: $bold;
+    }
+
+    h3 { // subheader
+        font-size: 0.8125rem;
+        line-height: 1.125rem;
+        font-family: 'Avenir';
+        font-weight: $bold; 
+
+        @include tablet-desktop {
+            font-size: 0.875rem;
+            line-height: 1.375rem;
+        }
+    }
+
+    p { // body copy
+        @include paragraph;
+    }
+}
+
+select, input, textarea {
+    @include paragraph;
+    border-radius: 0.25rem;
+    padding: 0.75rem;
+    outline: none;
+    overflow: hidden;
+    resize: none;
+
+    // &:focus {
+    //     border-width: 0.125rem;
+    //     border-radius: 0.125rem;
+    //     border-color: $dark;
+    //     outline: none;
+    // }
+
+    &::placeholder {
+        @include paragraph;
+        font-weight: 500;
+    }
+}
+

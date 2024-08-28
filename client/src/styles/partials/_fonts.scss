@@ -1,0 +1,25 @@
+@use './variables' as *;
+
+@font-face {
+    font-family: 'Avenir';
+    src: url("/src/assets/font/AvenirNextLTPro-Bold.otf") format("OpenType"),
+        url("/src/assets/font/Alternatives/AvenirNextLTProBold.ttf") format("TrueType");
+    font-weight: $bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url("/src/assets/font/AvenirNextLTPro-Demi.otf") format("OpenType"),
+        url("/src/assets/font/Alternatives/AvenirNextLTProDemi.ttf") format("TrueType");
+    font-weight: $demi;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url("/src/assets/font/AvenirNextLTPro-Regular.otf") format("OpenType"),
+        url("/src/assets/font/Alternatives/AvenirNextLTPro.ttf") format("TrueType");
+    font-weight: $regular;
+    font-style: normal;
+}
