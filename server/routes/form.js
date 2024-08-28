@@ -7,12 +7,12 @@ formRouter.use(express.json());
 
 formRouter.post('/', (req, res) => {
 	const { name, signed, color, message } = req.body;
-	const id = v4();
 
+	const id = v4();
 	const newMessage = {
 		id,
 		signed,
-		color,
+		color:`stickycard__${color}`,
 		message,
 	};
 
